@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RealApplicationModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBL_PAY_RECEIPT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_ORDER_AUTO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID_ORDER_HAND" Type="nvarchar" MaxLength="50" />
+    <Property Name="CUSTOMER_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="CUSTOMER_INVOICE_DATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID_PAY_RECEIPT" Type="nvarchar" MaxLength="50" />
+    <Property Name="USER_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DATE_NOW" Type="nvarchar" MaxLength="50" />
+    <Property Name="AMOUNT" Type="nvarchar" MaxLength="50" />
+    <Property Name="TOTAL_BEFORE_DISCOUNT" Type="nvarchar" MaxLength="50" />
+    <Property Name="DISCOUNT" Type="nvarchar" MaxLength="50" />
+    <Property Name="TOTAL_AFTER_DISCOUNT" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="RealApplicationModelStoreContainer">
+    <EntitySet Name="TBL_PAY_RECEIPT" EntityType="Self.TBL_PAY_RECEIPT" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

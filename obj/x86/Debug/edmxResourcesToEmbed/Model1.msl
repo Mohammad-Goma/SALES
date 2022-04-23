@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RealApplicationModelStoreContainer" CdmEntityContainer="RealApplicationEntities1">
+    <EntitySetMapping Name="TBL_PAY_RECEIPT">
+      <EntityTypeMapping TypeName="RealApplicationModel.TBL_PAY_RECEIPT">
+        <MappingFragment StoreEntitySet="TBL_PAY_RECEIPT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_ORDER_AUTO" ColumnName="ID_ORDER_AUTO" />
+          <ScalarProperty Name="ID_ORDER_HAND" ColumnName="ID_ORDER_HAND" />
+          <ScalarProperty Name="CUSTOMER_NAME" ColumnName="CUSTOMER_NAME" />
+          <ScalarProperty Name="CUSTOMER_INVOICE_DATE" ColumnName="CUSTOMER_INVOICE_DATE" />
+          <ScalarProperty Name="ID_PAY_RECEIPT" ColumnName="ID_PAY_RECEIPT" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="DATE_NOW" ColumnName="DATE_NOW" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="TOTAL_BEFORE_DISCOUNT" ColumnName="TOTAL_BEFORE_DISCOUNT" />
+          <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+          <ScalarProperty Name="TOTAL_AFTER_DISCOUNT" ColumnName="TOTAL_AFTER_DISCOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

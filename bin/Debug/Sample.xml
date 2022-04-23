@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Parcode" type="xs:string" minOccurs="0" />
+              <xs:element name="Product_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="First_Price" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" type="xs:string" minOccurs="0" />
+              <xs:element name="LESS_PRICE" type="xs:string" minOccurs="0" />
+              <xs:element name="Tax" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

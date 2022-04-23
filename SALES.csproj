@@ -1,0 +1,800 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props')" />
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A27FC624-3053-46EE-AA15-187CBE9EB2F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SALES</RootNamespace>
+    <AssemblyName>SALES</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>C:\Users\Gomaa\Desktop\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3F156D1946A54805BEDB6FAA985C0F34B3C304D2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SALES_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Antialiasfactory-Enterprise-Resource-Planning-ERP.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.4.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.5.1.1\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="File, Version=1.0.4791.26353, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\mscorlib-mock.1.0.4791.26353\lib\net40\File.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.3.3.11, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.3.3\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Commons, Version=1.0.4791.25785, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rhino.Commons.1.0.4791.25785\lib\net40\Rhino.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="SplashScreen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SplashScreen.Winforms.1.0.0\lib\SplashScreen.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="big_invoice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>big_invoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Billing_Crystal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Billing_Crystal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="DataSetnew_invoice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetnew_invoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Invoice.cs">
+      <DependentUpon>DataSet_Invoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_Invoice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Invoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Set_billing.cs">
+      <DependentUpon>Data_Set_billing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Set_billing.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_Set_billing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dept_rpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dept_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Customer_ِِAccount_Statement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ِِAccount_Statement.Designer.cs">
+      <DependentUpon>Customer_ِِAccount_Statement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Day_Note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Day_Note.Designer.cs">
+      <DependentUpon>Day_Note.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ds.cs">
+      <DependentUpon>Ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fill_Cbo.cs" />
+    <Compile Include="frm_Back.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Back.Designer.cs">
+      <DependentUpon>frm_Back.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Back_billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Back_billing.Designer.cs">
+      <DependentUpon>frm_Back_billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_back_invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_back_invoice.Designer.cs">
+      <DependentUpon>frm_back_invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Billing.Designer.cs">
+      <DependentUpon>frm_Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Branches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Branches.Designer.cs">
+      <DependentUpon>frm_Branches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Catch_Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Catch_Money.Designer.cs">
+      <DependentUpon>frm_Catch_Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Company.Designer.cs">
+      <DependentUpon>frm_Company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Currency.Designer.cs">
+      <DependentUpon>frm_Currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Customers.Designer.cs">
+      <DependentUpon>frm_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Deleget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Deleget.Designer.cs">
+      <DependentUpon>frm_Deleget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Deposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Deposit.Designer.cs">
+      <DependentUpon>frm_Deposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Employee.Designer.cs">
+      <DependentUpon>frm_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Invoice.Designer.cs">
+      <DependentUpon>frm_Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_new_invoice_crystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_new_invoice_crystal.Designer.cs">
+      <DependentUpon>frm_new_invoice_crystal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_permession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_permession.Designer.cs">
+      <DependentUpon>frm_permession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_product.Designer.cs">
+      <DependentUpon>frm_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Pay_Money.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Pay_Money.Designer.cs">
+      <DependentUpon>frm_Pay_Money.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Reports.Designer.cs">
+      <DependentUpon>frm_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Restore.Designer.cs">
+      <DependentUpon>frm_Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_units.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_units.Designer.cs">
+      <DependentUpon>frm_units.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_USERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_USERS.Designer.cs">
+      <DependentUpon>frm_USERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FshowRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FshowRpt.Designer.cs">
+      <DependentUpon>FshowRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_functions.cs" />
+    <Compile Include="ConnectionDB.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_store.Designer.cs">
+      <DependentUpon>frm_store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="frm_product_sections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_product_sections.Designer.cs">
+      <DependentUpon>frm_product_sections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance.Designer.cs">
+      <DependentUpon>Maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Month_Note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Month_Note.Designer.cs">
+      <DependentUpon>Month_Note.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT_PRODUCTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT_PRODUCTS.Designer.cs">
+      <DependentUpon>REPORT_PRODUCTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealApplicationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealApplicationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RealApplicationDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealApplicationDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RealApplicationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealApplicationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RealApplicationDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealApplicationDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RealApplicationDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealApplicationDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT_STORES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT_STORES.Designer.cs">
+      <DependentUpon>REPORT_STORES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResizeTools.cs" />
+    <Compile Include="Rport_Of_Billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rport_Of_Billing.Designer.cs">
+      <DependentUpon>Rport_Of_Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerSetting.Designer.cs">
+      <DependentUpon>ServerSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Supplier_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_Account.Designer.cs">
+      <DependentUpon>Supplier_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Billing.cs" />
+    <Compile Include="Tbl_Currency.cs" />
+    <Compile Include="frm_Treasury.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Treasury.Designer.cs">
+      <DependentUpon>frm_Treasury.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="big_invoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>big_invoice.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing_Crystal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Billing_Crystal.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dept_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Dept_rpt.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ِِAccount_Statement.resx">
+      <DependentUpon>Customer_ِِAccount_Statement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Day_Note.resx">
+      <DependentUpon>Day_Note.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Back.resx">
+      <DependentUpon>frm_Back.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Back_billing.resx">
+      <DependentUpon>frm_Back_billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_back_invoice.resx">
+      <DependentUpon>frm_back_invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Billing.resx">
+      <DependentUpon>frm_Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Branches.resx">
+      <DependentUpon>frm_Branches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Catch_Money.resx">
+      <DependentUpon>frm_Catch_Money.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Company.resx">
+      <DependentUpon>frm_Company.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Currency.resx">
+      <DependentUpon>frm_Currency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Customers.resx">
+      <DependentUpon>frm_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Deleget.resx">
+      <DependentUpon>frm_Deleget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Deposit.resx">
+      <DependentUpon>frm_Deposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Employee.resx">
+      <DependentUpon>frm_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Invoice.resx">
+      <DependentUpon>frm_Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_new_invoice_crystal.resx">
+      <DependentUpon>frm_new_invoice_crystal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_permession.resx">
+      <DependentUpon>frm_permession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_product.resx">
+      <DependentUpon>frm_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Pay_Money.resx">
+      <DependentUpon>frm_Pay_Money.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Reports.resx">
+      <DependentUpon>frm_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Restore.resx">
+      <DependentUpon>frm_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_store.agq.resx">
+      <DependentUpon>frm_store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_store.ar-EG.resx">
+      <DependentUpon>frm_store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_store.resx">
+      <DependentUpon>frm_store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_units.resx">
+      <DependentUpon>frm_units.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_USERS.resx">
+      <DependentUpon>frm_USERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_product_sections.resx">
+      <DependentUpon>frm_product_sections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FshowRpt.resx">
+      <DependentUpon>FshowRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance.resx">
+      <DependentUpon>Maintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Month_Note.resx">
+      <DependentUpon>Month_Note.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="REPORT_PRODUCTS.resx">
+      <DependentUpon>REPORT_PRODUCTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frm_Treasury.resx">
+      <DependentUpon>frm_Treasury.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT_STORES.resx">
+      <DependentUpon>REPORT_STORES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rport_Of_Billing.resx">
+      <DependentUpon>Rport_Of_Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerSetting.resx">
+      <DependentUpon>ServerSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_Account.resx">
+      <DependentUpon>Supplier_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSetnew_invoice.xsc">
+      <DependentUpon>DataSetnew_invoice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetnew_invoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetnew_invoice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetnew_invoice.xss">
+      <DependentUpon>DataSetnew_invoice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Invoice.xsc">
+      <DependentUpon>DataSet_Invoice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_Invoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Invoice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_Invoice.xss">
+      <DependentUpon>DataSet_Invoice.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Set_billing.xsc">
+      <DependentUpon>Data_Set_billing.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Set_billing.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_Set_billing.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data_Set_billing.xss">
+      <DependentUpon>Data_Set_billing.xsd</DependentUpon>
+    </None>
+    <None Include="Ds.xsc">
+      <DependentUpon>Ds.xsd</DependentUpon>
+    </None>
+    <None Include="Ds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds.xss">
+      <DependentUpon>Ds.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\frm_Invoice.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RealApplicationDataSet.xsc">
+      <DependentUpon>RealApplicationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RealApplicationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RealApplicationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RealApplicationDataSet.xss">
+      <DependentUpon>RealApplicationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RealApplicationDataSet1.xsc">
+      <DependentUpon>RealApplicationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RealApplicationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RealApplicationDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RealApplicationDataSet1.xss">
+      <DependentUpon>RealApplicationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RealApplicationDataSet2.xsc">
+      <DependentUpon>RealApplicationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RealApplicationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RealApplicationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RealApplicationDataSet2.xss">
+      <DependentUpon>RealApplicationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RealApplicationDataSet3.xsc">
+      <DependentUpon>RealApplicationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="RealApplicationDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RealApplicationDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RealApplicationDataSet3.xss">
+      <DependentUpon>RealApplicationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="RealApplicationDataSet4.xsc">
+      <DependentUpon>RealApplicationDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="RealApplicationDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RealApplicationDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RealApplicationDataSet4.xss">
+      <DependentUpon>RealApplicationDataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\analyzers\dotnet\cs\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\analyzers\dotnet\Microsoft.CodeAnalysis.VersionCheckAnalyzer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Antialiasfactory-Enterprise-Resource-Planning-ERP.ico" />
+    <Content Include="Jommans-Briefness-File-System.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.targets" Condition="Exists('..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.3.3.2\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.targets')" />
+</Project>

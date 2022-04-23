@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_Invoice" targetNamespace="http://tempuri.org/DataSet_Invoice.xsd" xmlns:mstns="http://tempuri.org/DataSet_Invoice.xsd" xmlns="http://tempuri.org/DataSet_Invoice.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_Invoice" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_Invoice" msprop:Generator_UserDSName="DataSet_Invoice">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data_Table_Invoice" msprop:Generator_TableClassName="Data_Table_InvoiceDataTable" msprop:Generator_TableVarName="tableData_Table_Invoice" msprop:Generator_TablePropName="Data_Table_Invoice" msprop:Generator_RowDeletingName="Data_Table_InvoiceRowDeleting" msprop:Generator_RowChangingName="Data_Table_InvoiceRowChanging" msprop:Generator_RowEvHandlerName="Data_Table_InvoiceRowChangeEventHandler" msprop:Generator_RowDeletedName="Data_Table_InvoiceRowDeleted" msprop:Generator_UserTableName="Data_Table_Invoice" msprop:Generator_RowChangedName="Data_Table_InvoiceRowChanged" msprop:Generator_RowEvArgName="Data_Table_InvoiceRowChangeEvent" msprop:Generator_RowClassName="Data_Table_InvoiceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pARCODEDataGridViewTextBoxColumn" msprop:Generator_ColumnVarNameInTable="columnpARCODEDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInRow="pARCODEDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInTable="pARCODEDataGridViewTextBoxColumnColumn" msprop:Generator_UserColumnName="pARCODEDataGridViewTextBoxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="pRODUCTNAMEDataGridViewTextBoxColumn" msprop:Generator_ColumnVarNameInTable="columnpRODUCTNAMEDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInRow="pRODUCTNAMEDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInTable="pRODUCTNAMEDataGridViewTextBoxColumnColumn" msprop:Generator_UserColumnName="pRODUCTNAMEDataGridViewTextBoxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="uNITDataGridViewTextBoxColumn" msprop:Generator_ColumnVarNameInTable="columnuNITDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInRow="uNITDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInTable="uNITDataGridViewTextBoxColumnColumn" msprop:Generator_UserColumnName="uNITDataGridViewTextBoxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="qTYDataGridViewTextBoxColumn" msprop:Generator_ColumnVarNameInTable="columnqTYDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInRow="qTYDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInTable="qTYDataGridViewTextBoxColumnColumn" msprop:Generator_UserColumnName="qTYDataGridViewTextBoxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Taxing" msprop:Generator_ColumnVarNameInTable="columnTaxing" msprop:Generator_ColumnPropNameInRow="Taxing" msprop:Generator_ColumnPropNameInTable="TaxingColumn" msprop:Generator_UserColumnName="Taxing" type="xs:string" minOccurs="0" />
+              <xs:element name="pRICEDataGridViewTextBoxColumn" msprop:Generator_ColumnVarNameInTable="columnpRICEDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInRow="pRICEDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInTable="pRICEDataGridViewTextBoxColumnColumn" msprop:Generator_UserColumnName="pRICEDataGridViewTextBoxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="tOTALDataGridViewTextBoxColumn" msprop:Generator_ColumnVarNameInTable="columntOTALDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInRow="tOTALDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInTable="tOTALDataGridViewTextBoxColumnColumn" msprop:Generator_UserColumnName="tOTALDataGridViewTextBoxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="orderidDataGridViewTextBoxColumn" msprop:Generator_ColumnVarNameInTable="columnorderidDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInRow="orderidDataGridViewTextBoxColumn" msprop:Generator_ColumnPropNameInTable="orderidDataGridViewTextBoxColumnColumn" msprop:Generator_UserColumnName="orderidDataGridViewTextBoxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ID_Order_Invoice" msprop:Generator_ColumnVarNameInTable="columnID_Order_Invoice" msprop:Generator_ColumnPropNameInRow="ID_Order_Invoice" msprop:Generator_ColumnPropNameInTable="ID_Order_InvoiceColumn" msprop:Generator_UserColumnName="ID_Order_Invoice" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

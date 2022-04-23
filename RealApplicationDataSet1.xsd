@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RealApplicationDataSet1" targetNamespace="http://tempuri.org/RealApplicationDataSet1.xsd" xmlns:mstns="http://tempuri.org/RealApplicationDataSet1.xsd" xmlns="http://tempuri.org/RealApplicationDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="RealApplicationConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="RealApplicationConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SALES.Properties.Settings.GlobalReference.Default.RealApplicationConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TBL_BILLINGTableAdapter" GeneratorDataComponentClassName="TBL_BILLINGTableAdapter" Name="TBL_BILLING" UserDataComponentName="TBL_BILLINGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="RealApplicationConnectionString (Settings)" DbObjectName="RealApplication.dbo.TBL_BILLING" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[TBL_BILLING] WHERE (([ID] = @Original_ID) AND ((@IsNull_USER_NAME = 1 AND [USER_NAME] IS NULL) OR ([USER_NAME] = @Original_USER_NAME)) AND ((@IsNull_BRANCH_NAME = 1 AND [BRANCH_NAME] IS NULL) OR ([BRANCH_NAME] = @Original_BRANCH_NAME)) AND ((@IsNull_STORE_NAME = 1 AND [STORE_NAME] IS NULL) OR ([STORE_NAME] = @Original_STORE_NAME)) AND ((@IsNull_BOX_NAME = 1 AND [BOX_NAME] IS NULL) OR ([BOX_NAME] = @Original_BOX_NAME)) AND ((@IsNull_CUSTOMER_RECIVE_BILLING = 1 AND [CUSTOMER_RECIVE_BILLING] IS NULL) OR ([CUSTOMER_RECIVE_BILLING] = @Original_CUSTOMER_RECIVE_BILLING)) AND ((@IsNull_BILLING_DELEGET_NUM = 1 AND [BILLING_DELEGET_NUM] IS NULL) OR ([BILLING_DELEGET_NUM] = @Original_BILLING_DELEGET_NUM)) AND ((@IsNull_CURENCY = 1 AND [CURENCY] IS NULL) OR ([CURENCY] = @Original_CURENCY)) AND ((@IsNull_Exchange_bill_number = 1 AND [Exchange_bill_number] IS NULL) OR ([Exchange_bill_number] = @Original_Exchange_bill_number)) AND ((@IsNull_METHOD_OF_TAX = 1 AND [METHOD_OF_TAX] IS NULL) OR ([METHOD_OF_TAX] = @Original_METHOD_OF_TAX)) AND ((@IsNull_DELEGET_NAME = 1 AND [DELEGET_NAME] IS NULL) OR ([DELEGET_NAME] = @Original_DELEGET_NAME)) AND ((@IsNull_TYPE_BILLING = 1 AND [TYPE_BILLING] IS NULL) OR ([TYPE_BILLING] = @Original_TYPE_BILLING)) AND ((@IsNull_TOTAL_DELEGET_BILLING = 1 AND [TOTAL_DELEGET_BILLING] IS NULL) OR ([TOTAL_DELEGET_BILLING] = @Original_TOTAL_DELEGET_BILLING)) AND ((@IsNull_DELEGET_BILLING_DATE = 1 AND [DELEGET_BILLING_DATE] IS NULL) OR ([DELEGET_BILLING_DATE] = @Original_DELEGET_BILLING_DATE)) AND ((@IsNull_TOTAL_AMOUNT = 1 AND [TOTAL_AMOUNT] IS NULL) OR ([TOTAL_AMOUNT] = @Original_TOTAL_AMOUNT)) AND ((@IsNull_DISCOUNT_PERCENT = 1 AND [DISCOUNT_PERCENT] IS NULL) OR ([DISCOUNT_PERCENT] = @Original_DISCOUNT_PERCENT)) AND ((@IsNull_DISCOUNT_MONEY = 1 AND [DISCOUNT_MONEY] IS NULL) OR ([DISCOUNT_MONEY] = @Original_DISCOUNT_MONEY)) AND ((@IsNull_TOTAL_BEFORE_DISCOUNT = 1 AND [TOTAL_BEFORE_DISCOUNT] IS NULL) OR ([TOTAL_BEFORE_DISCOUNT] = @Original_TOTAL_BEFORE_DISCOUNT)) AND ((@IsNull_TOTAL_DISCOUNT = 1 AND [TOTAL_DISCOUNT] IS NULL) OR ([TOTAL_DISCOUNT] = @Original_TOTAL_DISCOUNT)) AND ((@IsNull_TOTAL_AFTER_DISCOUNT = 1 AND [TOTAL_AFTER_DISCOUNT] IS NULL) OR ([TOTAL_AFTER_DISCOUNT] = @Original_TOTAL_AFTER_DISCOUNT)) AND ((@IsNull_PAY_FIRST = 1 AND [PAY_FIRST] IS NULL) OR ([PAY_FIRST] = @Original_PAY_FIRST)) AND ((@IsNull_THE_REST = 1 AND [THE_REST] IS NULL) OR ([THE_REST] = @Original_THE_REST)) AND ((@IsNull_DATE_TIME_NOW = 1 AND [DATE_TIME_NOW] IS NULL) OR ([DATE_TIME_NOW] = @Original_DATE_TIME_NOW)) AND ((@IsNull_DATE_EDITS = 1 AND [DATE_EDITS] IS NULL) OR ([DATE_EDITS] = @Original_DATE_EDITS)) AND ((@IsNull_Billing_insert_name = 1 AND [Billing_insert_name] IS NULL) OR ([Billing_insert_name] = @Original_Billing_insert_name)) AND ((@IsNull_Billing_Edite_name = 1 AND [Billing_Edite_name] IS NULL) OR ([Billing_Edite_name] = @Original_Billing_Edite_name)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_USER_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="USER_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="USER_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BRANCH_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BRANCH_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BRANCH_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BRANCH_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_STORE_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STORE_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_STORE_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STORE_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BOX_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BOX_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BOX_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BOX_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CUSTOMER_RECIVE_BILLING" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CUSTOMER_RECIVE_BILLING" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CUSTOMER_RECIVE_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CUSTOMER_RECIVE_BILLING" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BILLING_DELEGET_NUM" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BILLING_DELEGET_NUM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BILLING_DELEGET_NUM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BILLING_DELEGET_NUM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CURENCY" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CURENCY" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CURENCY" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CURENCY" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exchange_bill_number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exchange_bill_number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Exchange_bill_number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Exchange_bill_number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_METHOD_OF_TAX" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="METHOD_OF_TAX" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_METHOD_OF_TAX" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="METHOD_OF_TAX" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DELEGET_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DELEGET_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DELEGET_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DELEGET_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TYPE_BILLING" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TYPE_BILLING" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TYPE_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TYPE_BILLING" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTAL_DELEGET_BILLING" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTAL_DELEGET_BILLING" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TOTAL_DELEGET_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_DELEGET_BILLING" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DELEGET_BILLING_DATE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DELEGET_BILLING_DATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DELEGET_BILLING_DATE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DELEGET_BILLING_DATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTAL_AMOUNT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTAL_AMOUNT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TOTAL_AMOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_AMOUNT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DISCOUNT_PERCENT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DISCOUNT_PERCENT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DISCOUNT_PERCENT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DISCOUNT_PERCENT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DISCOUNT_MONEY" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DISCOUNT_MONEY" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DISCOUNT_MONEY" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DISCOUNT_MONEY" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTAL_BEFORE_DISCOUNT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTAL_BEFORE_DISCOUNT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TOTAL_BEFORE_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_BEFORE_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTAL_DISCOUNT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTAL_DISCOUNT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TOTAL_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTAL_AFTER_DISCOUNT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTAL_AFTER_DISCOUNT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TOTAL_AFTER_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_AFTER_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PAY_FIRST" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PAY_FIRST" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PAY_FIRST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PAY_FIRST" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_THE_REST" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="THE_REST" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_THE_REST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="THE_REST" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_TIME_NOW" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_TIME_NOW" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DATE_TIME_NOW" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DATE_TIME_NOW" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_EDITS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_EDITS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DATE_EDITS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DATE_EDITS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Billing_insert_name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Billing_insert_name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Billing_insert_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Billing_insert_name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Billing_Edite_name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Billing_Edite_name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Billing_Edite_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Billing_Edite_name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[TBL_BILLING] ([ID], [USER_NAME], [BRANCH_NAME], [STORE_NAME], [BOX_NAME], [CUSTOMER_RECIVE_BILLING], [BILLING_DELEGET_NUM], [CURENCY], [Exchange_bill_number], [METHOD_OF_TAX], [DELEGET_NAME], [TYPE_BILLING], [TOTAL_DELEGET_BILLING], [DELEGET_BILLING_DATE], [TOTAL_AMOUNT], [DISCOUNT_PERCENT], [DISCOUNT_MONEY], [TOTAL_BEFORE_DISCOUNT], [TOTAL_DISCOUNT], [TOTAL_AFTER_DISCOUNT], [PAY_FIRST], [THE_REST], [DATE_TIME_NOW], [DATE_EDITS], [Billing_insert_name], [Billing_Edite_name]) VALUES (@ID, @USER_NAME, @BRANCH_NAME, @STORE_NAME, @BOX_NAME, @CUSTOMER_RECIVE_BILLING, @BILLING_DELEGET_NUM, @CURENCY, @Exchange_bill_number, @METHOD_OF_TAX, @DELEGET_NAME, @TYPE_BILLING, @TOTAL_DELEGET_BILLING, @DELEGET_BILLING_DATE, @TOTAL_AMOUNT, @DISCOUNT_PERCENT, @DISCOUNT_MONEY, @TOTAL_BEFORE_DISCOUNT, @TOTAL_DISCOUNT, @TOTAL_AFTER_DISCOUNT, @PAY_FIRST, @THE_REST, @DATE_TIME_NOW, @DATE_EDITS, @Billing_insert_name, @Billing_Edite_name);
+SELECT ID, USER_NAME, BRANCH_NAME, STORE_NAME, BOX_NAME, CUSTOMER_RECIVE_BILLING, BILLING_DELEGET_NUM, CURENCY, Exchange_bill_number, METHOD_OF_TAX, DELEGET_NAME, TYPE_BILLING, TOTAL_DELEGET_BILLING, DELEGET_BILLING_DATE, TOTAL_AMOUNT, DISCOUNT_PERCENT, DISCOUNT_MONEY, TOTAL_BEFORE_DISCOUNT, TOTAL_DISCOUNT, TOTAL_AFTER_DISCOUNT, PAY_FIRST, THE_REST, DATE_TIME_NOW, DATE_EDITS, Billing_insert_name, Billing_Edite_name FROM TBL_BILLING WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="USER_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BRANCH_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BRANCH_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STORE_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STORE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BOX_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BOX_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CUSTOMER_RECIVE_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CUSTOMER_RECIVE_BILLING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BILLING_DELEGET_NUM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BILLING_DELEGET_NUM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CURENCY" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CURENCY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Exchange_bill_number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Exchange_bill_number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@METHOD_OF_TAX" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="METHOD_OF_TAX" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DELEGET_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DELEGET_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TYPE_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TYPE_BILLING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TOTAL_DELEGET_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_DELEGET_BILLING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DELEGET_BILLING_DATE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DELEGET_BILLING_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TOTAL_AMOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_AMOUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DISCOUNT_PERCENT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DISCOUNT_PERCENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DISCOUNT_MONEY" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DISCOUNT_MONEY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TOTAL_BEFORE_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_BEFORE_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TOTAL_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TOTAL_AFTER_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_AFTER_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PAY_FIRST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PAY_FIRST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@THE_REST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="THE_REST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DATE_TIME_NOW" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DATE_TIME_NOW" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DATE_EDITS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DATE_EDITS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Billing_insert_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Billing_insert_name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Billing_Edite_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Billing_Edite_name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, USER_NAME, BRANCH_NAME, STORE_NAME, BOX_NAME, CUSTOMER_RECIVE_BILLING, BILLING_DELEGET_NUM, CURENCY, Exchange_bill_number, METHOD_OF_TAX, DELEGET_NAME, TYPE_BILLING, TOTAL_DELEGET_BILLING, DELEGET_BILLING_DATE, TOTAL_AMOUNT, DISCOUNT_PERCENT, DISCOUNT_MONEY, TOTAL_BEFORE_DISCOUNT, TOTAL_DISCOUNT, TOTAL_AFTER_DISCOUNT, PAY_FIRST, THE_REST, DATE_TIME_NOW, DATE_EDITS, Billing_insert_name, Billing_Edite_name FROM dbo.TBL_BILLING</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[TBL_BILLING] SET [ID] = @ID, [USER_NAME] = @USER_NAME, [BRANCH_NAME] = @BRANCH_NAME, [STORE_NAME] = @STORE_NAME, [BOX_NAME] = @BOX_NAME, [CUSTOMER_RECIVE_BILLING] = @CUSTOMER_RECIVE_BILLING, [BILLING_DELEGET_NUM] = @BILLING_DELEGET_NUM, [CURENCY] = @CURENCY, [Exchange_bill_number] = @Exchange_bill_number, [METHOD_OF_TAX] = @METHOD_OF_TAX, [DELEGET_NAME] = @DELEGET_NAME, [TYPE_BILLING] = @TYPE_BILLING, [TOTAL_DELEGET_BILLING] = @TOTAL_DELEGET_BILLING, [DELEGET_BILLING_DATE] = @DELEGET_BILLING_DATE, [TOTAL_AMOUNT] = @TOTAL_AMOUNT, [DISCOUNT_PERCENT] = @DISCOUNT_PERCENT, [DISCOUNT_MONEY] = @DISCOUNT_MONEY, [TOTAL_BEFORE_DISCOUNT] = @TOTAL_BEFORE_DISCOUNT, [TOTAL_DISCOUNT] = @TOTAL_DISCOUNT, [TOTAL_AFTER_DISCOUNT] = @TOTAL_AFTER_DISCOUNT, [PAY_FIRST] = @PAY_FIRST, [THE_REST] = @THE_REST, [DATE_TIME_NOW] = @DATE_TIME_NOW, [DATE_EDITS] = @DATE_EDITS, [Billing_insert_name] = @Billing_insert_name, [Billing_Edite_name] = @Billing_Edite_name WHERE (([ID] = @Original_ID) AND ((@IsNull_USER_NAME = 1 AND [USER_NAME] IS NULL) OR ([USER_NAME] = @Original_USER_NAME)) AND ((@IsNull_BRANCH_NAME = 1 AND [BRANCH_NAME] IS NULL) OR ([BRANCH_NAME] = @Original_BRANCH_NAME)) AND ((@IsNull_STORE_NAME = 1 AND [STORE_NAME] IS NULL) OR ([STORE_NAME] = @Original_STORE_NAME)) AND ((@IsNull_BOX_NAME = 1 AND [BOX_NAME] IS NULL) OR ([BOX_NAME] = @Original_BOX_NAME)) AND ((@IsNull_CUSTOMER_RECIVE_BILLING = 1 AND [CUSTOMER_RECIVE_BILLING] IS NULL) OR ([CUSTOMER_RECIVE_BILLING] = @Original_CUSTOMER_RECIVE_BILLING)) AND ((@IsNull_BILLING_DELEGET_NUM = 1 AND [BILLING_DELEGET_NUM] IS NULL) OR ([BILLING_DELEGET_NUM] = @Original_BILLING_DELEGET_NUM)) AND ((@IsNull_CURENCY = 1 AND [CURENCY] IS NULL) OR ([CURENCY] = @Original_CURENCY)) AND ((@IsNull_Exchange_bill_number = 1 AND [Exchange_bill_number] IS NULL) OR ([Exchange_bill_number] = @Original_Exchange_bill_number)) AND ((@IsNull_METHOD_OF_TAX = 1 AND [METHOD_OF_TAX] IS NULL) OR ([METHOD_OF_TAX] = @Original_METHOD_OF_TAX)) AND ((@IsNull_DELEGET_NAME = 1 AND [DELEGET_NAME] IS NULL) OR ([DELEGET_NAME] = @Original_DELEGET_NAME)) AND ((@IsNull_TYPE_BILLING = 1 AND [TYPE_BILLING] IS NULL) OR ([TYPE_BILLING] = @Original_TYPE_BILLING)) AND ((@IsNull_TOTAL_DELEGET_BILLING = 1 AND [TOTAL_DELEGET_BILLING] IS NULL) OR ([TOTAL_DELEGET_BILLING] = @Original_TOTAL_DELEGET_BILLING)) AND ((@IsNull_DELEGET_BILLING_DATE = 1 AND [DELEGET_BILLING_DATE] IS NULL) OR ([DELEGET_BILLING_DATE] = @Original_DELEGET_BILLING_DATE)) AND ((@IsNull_TOTAL_AMOUNT = 1 AND [TOTAL_AMOUNT] IS NULL) OR ([TOTAL_AMOUNT] = @Original_TOTAL_AMOUNT)) AND ((@IsNull_DISCOUNT_PERCENT = 1 AND [DISCOUNT_PERCENT] IS NULL) OR ([DISCOUNT_PERCENT] = @Original_DISCOUNT_PERCENT)) AND ((@IsNull_DISCOUNT_MONEY = 1 AND [DISCOUNT_MONEY] IS NULL) OR ([DISCOUNT_MONEY] = @Original_DISCOUNT_MONEY)) AND ((@IsNull_TOTAL_BEFORE_DISCOUNT = 1 AND [TOTAL_BEFORE_DISCOUNT] IS NULL) OR ([TOTAL_BEFORE_DISCOUNT] = @Original_TOTAL_BEFORE_DISCOUNT)) AND ((@IsNull_TOTAL_DISCOUNT = 1 AND [TOTAL_DISCOUNT] IS NULL) OR ([TOTAL_DISCOUNT] = @Original_TOTAL_DISCOUNT)) AND ((@IsNull_TOTAL_AFTER_DISCOUNT = 1 AND [TOTAL_AFTER_DISCOUNT] IS NULL) OR ([TOTAL_AFTER_DISCOUNT] = @Original_TOTAL_AFTER_DISCOUNT)) AND ((@IsNull_PAY_FIRST = 1 AND [PAY_FIRST] IS NULL) OR ([PAY_FIRST] = @Original_PAY_FIRST)) AND ((@IsNull_THE_REST = 1 AND [THE_REST] IS NULL) OR ([THE_REST] = @Original_THE_REST)) AND ((@IsNull_DATE_TIME_NOW = 1 AND [DATE_TIME_NOW] IS NULL) OR ([DATE_TIME_NOW] = @Original_DATE_TIME_NOW)) AND ((@IsNull_DATE_EDITS = 1 AND [DATE_EDITS] IS NULL) OR ([DATE_EDITS] = @Original_DATE_EDITS)) AND ((@IsNull_Billing_insert_name = 1 AND [Billing_insert_name] IS NULL) OR ([Billing_insert_name] = @Original_Billing_insert_name)) AND ((@IsNull_Billing_Edite_name = 1 AND [Billing_Edite_name] IS NULL) OR ([Billing_Edite_name] = @Original_Billing_Edite_name)));
+SELECT ID, USER_NAME, BRANCH_NAME, STORE_NAME, BOX_NAME, CUSTOMER_RECIVE_BILLING, BILLING_DELEGET_NUM, CURENCY, Exchange_bill_number, METHOD_OF_TAX, DELEGET_NAME, TYPE_BILLING, TOTAL_DELEGET_BILLING, DELEGET_BILLING_DATE, TOTAL_AMOUNT, DISCOUNT_PERCENT, DISCOUNT_MONEY, TOTAL_BEFORE_DISCOUNT, TOTAL_DISCOUNT, TOTAL_AFTER_DISCOUNT, PAY_FIRST, THE_REST, DATE_TIME_NOW, DATE_EDITS, Billing_insert_name, Billing_Edite_name FROM TBL_BILLING WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="USER_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BRANCH_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BRANCH_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STORE_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STORE_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BOX_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BOX_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CUSTOMER_RECIVE_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CUSTOMER_RECIVE_BILLING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BILLING_DELEGET_NUM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BILLING_DELEGET_NUM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CURENCY" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CURENCY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Exchange_bill_number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Exchange_bill_number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@METHOD_OF_TAX" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="METHOD_OF_TAX" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DELEGET_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DELEGET_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TYPE_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TYPE_BILLING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TOTAL_DELEGET_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_DELEGET_BILLING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DELEGET_BILLING_DATE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DELEGET_BILLING_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TOTAL_AMOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_AMOUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DISCOUNT_PERCENT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DISCOUNT_PERCENT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DISCOUNT_MONEY" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DISCOUNT_MONEY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TOTAL_BEFORE_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_BEFORE_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TOTAL_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TOTAL_AFTER_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_AFTER_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PAY_FIRST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PAY_FIRST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@THE_REST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="THE_REST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DATE_TIME_NOW" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DATE_TIME_NOW" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DATE_EDITS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DATE_EDITS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Billing_insert_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Billing_insert_name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Billing_Edite_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Billing_Edite_name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_USER_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="USER_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_USER_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="USER_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BRANCH_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BRANCH_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BRANCH_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BRANCH_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_STORE_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STORE_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_STORE_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STORE_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BOX_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BOX_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BOX_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BOX_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CUSTOMER_RECIVE_BILLING" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CUSTOMER_RECIVE_BILLING" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CUSTOMER_RECIVE_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CUSTOMER_RECIVE_BILLING" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BILLING_DELEGET_NUM" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BILLING_DELEGET_NUM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_BILLING_DELEGET_NUM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BILLING_DELEGET_NUM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CURENCY" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CURENCY" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CURENCY" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CURENCY" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Exchange_bill_number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Exchange_bill_number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Exchange_bill_number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Exchange_bill_number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_METHOD_OF_TAX" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="METHOD_OF_TAX" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_METHOD_OF_TAX" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="METHOD_OF_TAX" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DELEGET_NAME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DELEGET_NAME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DELEGET_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DELEGET_NAME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TYPE_BILLING" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TYPE_BILLING" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TYPE_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TYPE_BILLING" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTAL_DELEGET_BILLING" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTAL_DELEGET_BILLING" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TOTAL_DELEGET_BILLING" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_DELEGET_BILLING" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DELEGET_BILLING_DATE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DELEGET_BILLING_DATE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DELEGET_BILLING_DATE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DELEGET_BILLING_DATE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTAL_AMOUNT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTAL_AMOUNT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TOTAL_AMOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_AMOUNT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DISCOUNT_PERCENT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DISCOUNT_PERCENT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DISCOUNT_PERCENT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DISCOUNT_PERCENT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DISCOUNT_MONEY" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DISCOUNT_MONEY" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DISCOUNT_MONEY" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DISCOUNT_MONEY" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTAL_BEFORE_DISCOUNT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTAL_BEFORE_DISCOUNT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TOTAL_BEFORE_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_BEFORE_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTAL_DISCOUNT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTAL_DISCOUNT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TOTAL_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TOTAL_AFTER_DISCOUNT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TOTAL_AFTER_DISCOUNT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TOTAL_AFTER_DISCOUNT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TOTAL_AFTER_DISCOUNT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PAY_FIRST" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PAY_FIRST" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PAY_FIRST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PAY_FIRST" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_THE_REST" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="THE_REST" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_THE_REST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="THE_REST" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_TIME_NOW" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_TIME_NOW" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DATE_TIME_NOW" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DATE_TIME_NOW" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_EDITS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_EDITS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DATE_EDITS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DATE_EDITS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Billing_insert_name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Billing_insert_name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Billing_insert_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Billing_insert_name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Billing_Edite_name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Billing_Edite_name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Billing_Edite_name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Billing_Edite_name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="USER_NAME" DataSetColumn="USER_NAME" />
+              <Mapping SourceColumn="BRANCH_NAME" DataSetColumn="BRANCH_NAME" />
+              <Mapping SourceColumn="STORE_NAME" DataSetColumn="STORE_NAME" />
+              <Mapping SourceColumn="BOX_NAME" DataSetColumn="BOX_NAME" />
+              <Mapping SourceColumn="CUSTOMER_RECIVE_BILLING" DataSetColumn="CUSTOMER_RECIVE_BILLING" />
+              <Mapping SourceColumn="BILLING_DELEGET_NUM" DataSetColumn="BILLING_DELEGET_NUM" />
+              <Mapping SourceColumn="CURENCY" DataSetColumn="CURENCY" />
+              <Mapping SourceColumn="Exchange_bill_number" DataSetColumn="Exchange_bill_number" />
+              <Mapping SourceColumn="METHOD_OF_TAX" DataSetColumn="METHOD_OF_TAX" />
+              <Mapping SourceColumn="DELEGET_NAME" DataSetColumn="DELEGET_NAME" />
+              <Mapping SourceColumn="TYPE_BILLING" DataSetColumn="TYPE_BILLING" />
+              <Mapping SourceColumn="TOTAL_DELEGET_BILLING" DataSetColumn="TOTAL_DELEGET_BILLING" />
+              <Mapping SourceColumn="DELEGET_BILLING_DATE" DataSetColumn="DELEGET_BILLING_DATE" />
+              <Mapping SourceColumn="TOTAL_AMOUNT" DataSetColumn="TOTAL_AMOUNT" />
+              <Mapping SourceColumn="DISCOUNT_PERCENT" DataSetColumn="DISCOUNT_PERCENT" />
+              <Mapping SourceColumn="DISCOUNT_MONEY" DataSetColumn="DISCOUNT_MONEY" />
+              <Mapping SourceColumn="TOTAL_BEFORE_DISCOUNT" DataSetColumn="TOTAL_BEFORE_DISCOUNT" />
+              <Mapping SourceColumn="TOTAL_DISCOUNT" DataSetColumn="TOTAL_DISCOUNT" />
+              <Mapping SourceColumn="TOTAL_AFTER_DISCOUNT" DataSetColumn="TOTAL_AFTER_DISCOUNT" />
+              <Mapping SourceColumn="PAY_FIRST" DataSetColumn="PAY_FIRST" />
+              <Mapping SourceColumn="THE_REST" DataSetColumn="THE_REST" />
+              <Mapping SourceColumn="DATE_TIME_NOW" DataSetColumn="DATE_TIME_NOW" />
+              <Mapping SourceColumn="DATE_EDITS" DataSetColumn="DATE_EDITS" />
+              <Mapping SourceColumn="Billing_insert_name" DataSetColumn="Billing_insert_name" />
+              <Mapping SourceColumn="Billing_Edite_name" DataSetColumn="Billing_Edite_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RealApplicationDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="RealApplicationDataSet1" msprop:Generator_UserDSName="RealApplicationDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TBL_BILLING" msprop:Generator_TableClassName="TBL_BILLINGDataTable" msprop:Generator_TableVarName="tableTBL_BILLING" msprop:Generator_TablePropName="TBL_BILLING" msprop:Generator_RowDeletingName="TBL_BILLINGRowDeleting" msprop:Generator_RowChangingName="TBL_BILLINGRowChanging" msprop:Generator_RowEvHandlerName="TBL_BILLINGRowChangeEventHandler" msprop:Generator_RowDeletedName="TBL_BILLINGRowDeleted" msprop:Generator_UserTableName="TBL_BILLING" msprop:Generator_RowChangedName="TBL_BILLINGRowChanged" msprop:Generator_RowEvArgName="TBL_BILLINGRowChangeEvent" msprop:Generator_RowClassName="TBL_BILLINGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" msprop:Generator_UserColumnName="USER_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BRANCH_NAME" msprop:Generator_ColumnVarNameInTable="columnBRANCH_NAME" msprop:Generator_ColumnPropNameInRow="BRANCH_NAME" msprop:Generator_ColumnPropNameInTable="BRANCH_NAMEColumn" msprop:Generator_UserColumnName="BRANCH_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STORE_NAME" msprop:Generator_ColumnVarNameInTable="columnSTORE_NAME" msprop:Generator_ColumnPropNameInRow="STORE_NAME" msprop:Generator_ColumnPropNameInTable="STORE_NAMEColumn" msprop:Generator_UserColumnName="STORE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BOX_NAME" msprop:Generator_ColumnVarNameInTable="columnBOX_NAME" msprop:Generator_ColumnPropNameInRow="BOX_NAME" msprop:Generator_ColumnPropNameInTable="BOX_NAMEColumn" msprop:Generator_UserColumnName="BOX_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUSTOMER_RECIVE_BILLING" msprop:Generator_ColumnVarNameInTable="columnCUSTOMER_RECIVE_BILLING" msprop:Generator_ColumnPropNameInRow="CUSTOMER_RECIVE_BILLING" msprop:Generator_ColumnPropNameInTable="CUSTOMER_RECIVE_BILLINGColumn" msprop:Generator_UserColumnName="CUSTOMER_RECIVE_BILLING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BILLING_DELEGET_NUM" msprop:Generator_ColumnVarNameInTable="columnBILLING_DELEGET_NUM" msprop:Generator_ColumnPropNameInRow="BILLING_DELEGET_NUM" msprop:Generator_ColumnPropNameInTable="BILLING_DELEGET_NUMColumn" msprop:Generator_UserColumnName="BILLING_DELEGET_NUM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CURENCY" msprop:Generator_ColumnVarNameInTable="columnCURENCY" msprop:Generator_ColumnPropNameInRow="CURENCY" msprop:Generator_ColumnPropNameInTable="CURENCYColumn" msprop:Generator_UserColumnName="CURENCY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Exchange_bill_number" msprop:Generator_ColumnVarNameInTable="columnExchange_bill_number" msprop:Generator_ColumnPropNameInRow="Exchange_bill_number" msprop:Generator_ColumnPropNameInTable="Exchange_bill_numberColumn" msprop:Generator_UserColumnName="Exchange_bill_number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="METHOD_OF_TAX" msprop:Generator_ColumnVarNameInTable="columnMETHOD_OF_TAX" msprop:Generator_ColumnPropNameInRow="METHOD_OF_TAX" msprop:Generator_ColumnPropNameInTable="METHOD_OF_TAXColumn" msprop:Generator_UserColumnName="METHOD_OF_TAX" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DELEGET_NAME" msprop:Generator_ColumnVarNameInTable="columnDELEGET_NAME" msprop:Generator_ColumnPropNameInRow="DELEGET_NAME" msprop:Generator_ColumnPropNameInTable="DELEGET_NAMEColumn" msprop:Generator_UserColumnName="DELEGET_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TYPE_BILLING" msprop:Generator_ColumnVarNameInTable="columnTYPE_BILLING" msprop:Generator_ColumnPropNameInRow="TYPE_BILLING" msprop:Generator_ColumnPropNameInTable="TYPE_BILLINGColumn" msprop:Generator_UserColumnName="TYPE_BILLING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTAL_DELEGET_BILLING" msprop:Generator_ColumnVarNameInTable="columnTOTAL_DELEGET_BILLING" msprop:Generator_ColumnPropNameInRow="TOTAL_DELEGET_BILLING" msprop:Generator_ColumnPropNameInTable="TOTAL_DELEGET_BILLINGColumn" msprop:Generator_UserColumnName="TOTAL_DELEGET_BILLING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DELEGET_BILLING_DATE" msprop:Generator_ColumnVarNameInTable="columnDELEGET_BILLING_DATE" msprop:Generator_ColumnPropNameInRow="DELEGET_BILLING_DATE" msprop:Generator_ColumnPropNameInTable="DELEGET_BILLING_DATEColumn" msprop:Generator_UserColumnName="DELEGET_BILLING_DATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTAL_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnTOTAL_AMOUNT" msprop:Generator_ColumnPropNameInRow="TOTAL_AMOUNT" msprop:Generator_ColumnPropNameInTable="TOTAL_AMOUNTColumn" msprop:Generator_UserColumnName="TOTAL_AMOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DISCOUNT_PERCENT" msprop:Generator_ColumnVarNameInTable="columnDISCOUNT_PERCENT" msprop:Generator_ColumnPropNameInRow="DISCOUNT_PERCENT" msprop:Generator_ColumnPropNameInTable="DISCOUNT_PERCENTColumn" msprop:Generator_UserColumnName="DISCOUNT_PERCENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DISCOUNT_MONEY" msprop:Generator_ColumnVarNameInTable="columnDISCOUNT_MONEY" msprop:Generator_ColumnPropNameInRow="DISCOUNT_MONEY" msprop:Generator_ColumnPropNameInTable="DISCOUNT_MONEYColumn" msprop:Generator_UserColumnName="DISCOUNT_MONEY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTAL_BEFORE_DISCOUNT" msprop:Generator_ColumnVarNameInTable="columnTOTAL_BEFORE_DISCOUNT" msprop:Generator_ColumnPropNameInRow="TOTAL_BEFORE_DISCOUNT" msprop:Generator_ColumnPropNameInTable="TOTAL_BEFORE_DISCOUNTColumn" msprop:Generator_UserColumnName="TOTAL_BEFORE_DISCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTAL_DISCOUNT" msprop:Generator_ColumnVarNameInTable="columnTOTAL_DISCOUNT" msprop:Generator_ColumnPropNameInRow="TOTAL_DISCOUNT" msprop:Generator_ColumnPropNameInTable="TOTAL_DISCOUNTColumn" msprop:Generator_UserColumnName="TOTAL_DISCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTAL_AFTER_DISCOUNT" msprop:Generator_ColumnVarNameInTable="columnTOTAL_AFTER_DISCOUNT" msprop:Generator_ColumnPropNameInRow="TOTAL_AFTER_DISCOUNT" msprop:Generator_ColumnPropNameInTable="TOTAL_AFTER_DISCOUNTColumn" msprop:Generator_UserColumnName="TOTAL_AFTER_DISCOUNT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAY_FIRST" msprop:Generator_ColumnVarNameInTable="columnPAY_FIRST" msprop:Generator_ColumnPropNameInRow="PAY_FIRST" msprop:Generator_ColumnPropNameInTable="PAY_FIRSTColumn" msprop:Generator_UserColumnName="PAY_FIRST" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="THE_REST" msprop:Generator_ColumnVarNameInTable="columnTHE_REST" msprop:Generator_ColumnPropNameInRow="THE_REST" msprop:Generator_ColumnPropNameInTable="THE_RESTColumn" msprop:Generator_UserColumnName="THE_REST" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATE_TIME_NOW" msprop:Generator_ColumnVarNameInTable="columnDATE_TIME_NOW" msprop:Generator_ColumnPropNameInRow="DATE_TIME_NOW" msprop:Generator_ColumnPropNameInTable="DATE_TIME_NOWColumn" msprop:Generator_UserColumnName="DATE_TIME_NOW" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATE_EDITS" msprop:Generator_ColumnVarNameInTable="columnDATE_EDITS" msprop:Generator_ColumnPropNameInRow="DATE_EDITS" msprop:Generator_ColumnPropNameInTable="DATE_EDITSColumn" msprop:Generator_UserColumnName="DATE_EDITS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Billing_insert_name" msprop:Generator_ColumnVarNameInTable="columnBilling_insert_name" msprop:Generator_ColumnPropNameInRow="Billing_insert_name" msprop:Generator_ColumnPropNameInTable="Billing_insert_nameColumn" msprop:Generator_UserColumnName="Billing_insert_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Billing_Edite_name" msprop:Generator_ColumnVarNameInTable="columnBilling_Edite_name" msprop:Generator_ColumnPropNameInRow="Billing_Edite_name" msprop:Generator_ColumnPropNameInTable="Billing_Edite_nameColumn" msprop:Generator_UserColumnName="Billing_Edite_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TBL_BILLING" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
